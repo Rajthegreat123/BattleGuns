@@ -1,0 +1,279 @@
+body {
+    overscroll-behavior-x: none;
+    overscroll-behavior-y: none;
+    margin: 0px;
+}
+
+#menu {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://media.discordapp.net/attachments/786372452313071626/830361201665900544/BG.JPG?width=842&height=473");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-size: 40px;
+}
+
+#death-screen {
+    display: none;
+    font-size: 4rem;
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    background-color: #069950;
+    position: absolute;
+}
+
+#death-menu {
+    position: relative;
+    top: 16vh;
+    font-family: 'Montserrat', sans-serif;
+}
+#return {
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(-50%, 0);
+    width: 8vw;
+    height: 5vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white;
+    background-color: #30AE68;
+}
+#time, #return, #ded {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#discord {
+    position: absolute;
+    height: 7vh;
+    left: 0.5vw;
+    bottom: 0.5vw;
+}
+#discord:hover {
+    cursor: pointer;
+}
+
+#playerCount {
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 1vw;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+#title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: -5vh;
+}
+#logo {
+    margin-top: 20vh;
+    width: 30vw;
+    height: auto;
+}
+
+#playMenu {
+    text-align: center;
+    height: 100px;
+}
+
+#nameInput {
+    margin-top: 2vw;
+    text-indent: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    width: 12vw;
+    height: 3vw;
+    font-weight: bold;
+    color: white;
+    background-color: #378056;
+
+    border-radius: 1.2vw;
+}
+#nameInput::placeholder {
+    font-weight: bold;
+    color: white;
+}
+#nameInput:focus {
+    outline: none;
+    border-color: #ededed;
+    box-shadow: 0 0 1vw #ededed;
+}
+
+#settings {
+    margin-top: 2vh;
+    width: 6vw;
+    height: 2vw;
+
+    background-color: #30AE68;
+    font-size: 1vw;
+    color: white;
+}
+#settingsDiv {
+    visibility: hidden;
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    left: 40%;
+
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(47,126,82,0.6);
+    border-color: rgba(50,99,71,0.6);
+
+    font-size: 1vw;
+    color: white;
+}
+#closeButton {
+    text-align: center;
+    width: 2.4vw;
+    height: 2.4vw;
+    font-size: 1.8vw;
+    background-color: #30AE68;
+    font-weight: bold;
+    color: white;
+}
+#settingsDiv h2 {
+    margin-left: 20px;
+}
+
+#serverSelect {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2vh;
+    width: 10.5vw;
+    height: 2vw;
+    font-size: 0.8vw;
+    color: white;
+    font-weight: bold;
+    background-color: #378056;
+}
+#serverSelect:focus {
+    outline: none;
+    border-color: #ededed;
+    box-shadow: 0 0 1vw #ededed;
+}
+
+#playButton {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2vh;
+    width: 8vw;
+    height: 3vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: white;
+    background-color: #30AE68;
+}
+
+.customBtn:focus {
+    outline: none;
+    border-color: #ededed;
+    box-shadow: 0 0 1vw #ededed;
+}
+.customBtn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+.customBtn:active {
+    opacity: 0.8;
+}
+
+.defaultBorder {
+    border-color: #385243;
+    border-radius: 0.4vw;
+    border-width: 0.2vw;
+    border-style: solid;
+}
+
+#gameArea {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#commandInput {
+    position: absolute;
+    font-size: 1.2rem;
+    margin-top: 24rem;
+    height: 40px;
+    visibility: hidden;
+}
+
+#changelog {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    height: 400px;
+    width: 280px;
+    bottom: 1vw;
+    right: 1vw;
+    background-color: #068f4b;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+
+    border-color: #385243;
+    border-radius: 0.4vw;
+    border-width: 0.2vw;
+    border-style: solid;
+
+    opacity: 0.8;
+}
+#changelog-p {
+    margin-top: 23px;
+    color: #ffffff;
+    font: 30px Montserrat;
+}
+.update {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -15px;
+    color: #ffffff;
+    font: 16px Montserrat;
+    width: 250px;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+.log {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    color: #ffffff;
+    font: 14px Montserrat;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #068f4b;
+    border-radius: 0.4vw;
+}
+::-webkit-scrollbar-thumb {
+    background: #30AE68;
+    border-radius: 0.4vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #36c275;
+    border-radius: 0.4vw;
+}

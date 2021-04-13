@@ -1,0 +1,74 @@
+<head>
+    <title>BattleGuns.io Alpha</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Play BattleGuns.io Alpha">
+    <meta property="og:description" content="BattleGuns.io Alpha testing is now open!">
+    <meta property="og:image" content="https://viter.io/client/images/objects/obstacles/pine0.png">
+
+    <script src="/client/msgpack.js"></script>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/client/images/menu/favicon.ico">
+    <link rel="stylesheet" href="/client/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WEYRHR9F7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7WEYRHR9F7');
+    </script>
+
+    <script src="/client/script.js"></script>
+</head>
+
+<body>
+    <div id="gameArea">
+        <canvas id="canvas"></canvas>
+        <input autofocus id="commandInput" type="text" placeholder="Enter command" maxlength="100" visibility="visible">
+    </div>
+    <div id="menu">
+        <div id="playMenu">
+            <h1 id="title">
+            <input id="nameInput" class="defaultBorder" autofocus maxlength="20" placeholder="Tank Name"><br>
+            <select id="serverSelect" class="defaultBorder">
+            </select><br>
+            <button id="playButton" class="customBtn defaultBorder">Play</button><br>
+            <button onclick="document.getElementById('settingsDiv').style.visibility = 'visible'"
+                class="customBtn defaultBorder" id="settings">Settings</button><br>
+        </div>
+        <p id="playerCount">0 players shooting.</p>
+        <img id="discord" src="./client/images/menu/discord.png" onclick="window.open('https://discord.gg/p4rJ9TrJUa')">
+        <div id="changelog">
+            <p id="changelog-p"><a href="./changelog" rel="noopener" target="_blank">Changelog</a></p>
+            <!-- Update template -->
+            <!-- <div>
+            <p class="update">Update vXX.XX</p>
+            <p class="log"> test test test test test test test test test test test</p>
+            <p></p>
+        </div> -->
+            <div>
+                <p class="update">Update 1.1.0 - Opened Alpha</p>
+                <li class="log">Fixed crash issue.</li>
+                <li class="log">Fixed bugs.</li>
+                <li class="log">Added changelog to main page.</li>
+                <li class="log">Added changelog history page.</li>
+                <br><br>
+            </div>
+        </div>
+        <div id="settingsDiv" class="defaultBorder">
+            <button onclick="document.getElementById('settingsDiv').style.visibility = 'hidden'" id="closeButton"
+                class="customBtn defaultBorder">×</button>
+            <h2>Setting</h2>
+        </div>
+    </div>
+    <div id="death-screen">
+        <div id="death-menu">
+            <canvas id="death-canvas"></canvas>
+            <button id="return" class="customBtn defaultBorder">Return to Menu</button>
+        </div>
+    </div>
+</body>
